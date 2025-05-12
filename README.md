@@ -1,4 +1,4 @@
-# 🧱 Retaining‑Wall Calculator
+# 🧱 Retaining‑Wall Calculator (Muro de Arrimo)
 
 **Next.js 14 + Tailwind CSS + shadcn/ui** – uma calculadora (didática) para dimensionamento de muros de arrimo em concreto armado ou gravidade. Inclui verificações de **empuxo**, **deslizamento**, **tombamento** e **pressão de apoio** num painel limpo, inspirado na interface clássica do Eberick.
 
