@@ -1,12 +1,8 @@
-# 🧱 Retaining‑Wall Calculator (Muro de Arrimo)
+# 🧱 Retaining‑Wall Calculator
 
 **Next.js 14 + Tailwind CSS + shadcn/ui** – uma calculadora (didática) para dimensionamento de muros de arrimo em concreto armado ou gravidade. Inclui verificações de **empuxo**, **deslizamento**, **tombamento** e **pressão de apoio** num painel limpo, inspirado na interface clássica do Eberick.
 
 > ⚠️  **Atenção**: os modelos de cálculo aqui são simplificados. Ajuste as fórmulas e fatores de segurança para atender às exigências da sua norma (NBR 11682 / NBR 6118, Eurocode 7, etc.). Use por sua conta e risco em projetos reais.
-
-<p align="center">
-  <img src="./.github/screenshot.png" alt="Screenshot da UI" width="700"/>
-</p>
 
 ---
 
@@ -40,7 +36,12 @@ npm install
 
 # CLI & componentes shadcn (se ainda não estiverem)
 npx shadcn-ui@latest init         # responde aos prompts
-echo "select,tabs,input,button,card" | tr ',' '\n' | while read c; do npx shadcn-ui add "$c"; done
+# adicione os componentes necessários (rode um por vez)
+npx shadcn-ui add select
+npx shadcn-ui add tabs
+npx shadcn-ui add input
+npx shadcn-ui add button
+npx shadcn-ui add card
 ```
 
 ### 3. Execute em modo desenvolvimento
